@@ -10,11 +10,11 @@ function UserHeader() {
         src="/assets/images/avatar.jpg"
         alt="Picture of the author"
       />
-      <figcaption className="ml-3 text-white">
+      <figcaption className="ml-3 dark:text-white text-black">
         <p className="mb-1 font-normal text-base">
           Personal blog by{" "}
           <a
-            className="text-rose-300  opacity-100 underline hover:no-underline  underline-offset-2"
+            className="  text-red-500 dark:text-rose-300 underline hover:no-underline  underline-offset-2"
             href="https://mobile.twitter.com/dan_abramov"
           >
             Dan Abramov

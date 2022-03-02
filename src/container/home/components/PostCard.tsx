@@ -29,11 +29,13 @@ const PostCard: React.FC<Iprops> = ({ post }) => {
             {post.title}
           </a>
         </Link>
-        <span className="text-white text-sm opacity-80">
+        <span className=" text-black dark:text-white text-sm opacity-80">
           {calcDate}. {calcTime} {post.id} min read
         </span>
       </header>
-      <p className="text-base text-white opacity-80">{post.body}</p>
+      <p className="text-base text-black dark:text-white opacity-80">
+        {post.body}
+      </p>
     </article>
   );
 };

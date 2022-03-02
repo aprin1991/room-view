@@ -1,8 +1,7 @@
 import { combineReducers } from "redux";
+import darkModeReducer from "./toggle_dark_light/toggle.reducer";
 
-import counter from "@redux/slices/counter";
-
-const rootReducer = combineReducers({ counter });
+const rootReducer = combineReducers({ darkMode: darkModeReducer });
 
 export type RootState = ReturnType<typeof rootReducer>;
 

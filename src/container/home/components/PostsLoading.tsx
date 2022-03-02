@@ -4,9 +4,9 @@ function PostsLoading() {
   return (
     <div>
       {map(
-        Array.from({ length: 7 }, () => {
+        Array.from({ length: 7 }, (_, index) => {
           return (
-            <div className="animate-pulse mb-16">
+            <div key={index} className="animate-pulse mb-16">
               <h2 className="w-full h-2 bg-gray-300 mb-3"></h2>
               <div className="w-1/2 flex justify-start items-center mb-3">
                 <span className="w-1/2 h-1 bg-gray-300 mr-1" />
