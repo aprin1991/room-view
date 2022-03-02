@@ -1,0 +1,49 @@
+$pink: #ffa7c4;
+@font-face {
+    font-family: "Merriweather";
+    src: url("../../../public/assets/font/Merriweather-Regular.woff2") format("woff2"), url("../../../public/assets/font/Merriweather-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../../public/assets/font/Montserrat-Black.woff2") format("woff2"), url("../../../public/assets/font/Montserrat-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", serif;
+}
+
+html,
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282c35;
+}
+
+.container {
+    max-width: 672px !important;
+}
