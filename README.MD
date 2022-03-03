@@ -33,6 +33,9 @@
 
 ## Technologies:
 
+### **NEXT.JS**
+### **TypeScript**
+### **Axios**
 ### **TailwindCSS**
 ### **SASS/SCSS**
 ### **React Redux**
