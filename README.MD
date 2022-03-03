@@ -1,10 +1,6 @@
 # room-view
 
 
-## Getting Started
-
-
-
 ## Available Scripts
 
 ### Install Packages.
