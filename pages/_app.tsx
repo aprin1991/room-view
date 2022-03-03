@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import store from "@redux/store";
 import { Container } from "@components";
 import Head from "next/head";
-
+import "react-toastify/dist/ReactToastify.css";
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   useEffect(() => {
     if (
@@ -85,6 +85,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
             href="/icons/homescreen512.png"
             sizes="512x512"
           />
+          <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#8b5cf6" />
         </Head>
       </Head>

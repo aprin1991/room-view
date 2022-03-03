@@ -18,7 +18,12 @@ class CustomDocument extends Document {
   render(): JSX.Element {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/icons/homescreen48.png"></link>
+          <meta name="theme-color" content="#fff" />
+          <link rel="shortcut icon" href="/icons/homescreen48.png" />
+        </Head>
         <body>
           <Main />
           <NextScript />

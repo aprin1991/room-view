@@ -55,3 +55,17 @@ body {
 .container {
     max-width: 672px !important;
 }
+
+.Toastify {
+    z-index: 250000;
+    position: relative;
+    .Toastify__toast-body {
+        .Toastify__toast-icon {
+            ~div {
+                >div {
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+}

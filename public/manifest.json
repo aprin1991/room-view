@@ -1,17 +1,8 @@
 {
-    "name": "room-view",
-    "short_name": "Room View",
-    "start_url": "./",
-    "scope": ".",
-    "display": "standalone",
-    "dir": "ltr",
-    "lang": "en",
-    "orientation": "portrait-primary",
-    "background_color": "#fff",
-    "theme_color": "#021922",
-    "purpose": "maskable any",
+    "short_name": "roomvu",
+    "name": "Room View  ",
     "icons": [{
-            "src": "/static/icons/homescreen48.png",
+            "src": "/icons/homescreen48.png",
             "sizes": "48x48",
             "type": "image/png"
         },
@@ -51,5 +42,8 @@
             "type": "image/png"
         }
     ],
-    "required_features": ["geolocation"]
+    "display": "standalone",
+    "start_url": "/",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }
