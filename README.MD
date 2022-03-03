@@ -33,8 +33,8 @@
 ![](https://img.shields.io/badge/-Redux-61DAFB?logo=react&logoColor=007acc&style=flat-square&color=61DBFB)
 ![](https://img.shields.io/badge/-Axios-000000?logo=axios&logoColor=007acc&style=flat-square&color=f7df1e)
 ![](https://img.shields.io/badge/-TailwindCSS-61DAFB?logo=tailwind&logoColor=white&style=flat-square&color=007acc)
+![](https://img.shields.io/badge/-sass-61DAFB?logo=sass&logoColor=cf649a&style=flat-square&color=fff)
 
 
 
 
- Axios, TailwindCSS, SASS/SCSS
