@@ -1,5 +1,5 @@
 import ToggleActionTypes from "./ToggleActionTypes";
-const INITIAL_STATE = true;
+const INITIAL_STATE = -1;
 
 const darkModeReducer = (state: any = INITIAL_STATE, action: any) => {
   switch (action.type) {

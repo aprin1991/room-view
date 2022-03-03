@@ -10,7 +10,8 @@ const PostCard: React.FC<Iprops> = ({ post }) => {
       month: "long",
       day: "numeric",
       year: "numeric",
-    }).format(new Date());
+    }).format(new Date(post.id * (24 * 1000 * 60 * 60)));
+
     return displayDate;
   }, [post]);
   const calcTime = useMemo(() => {
@@ -40,4 +41,4 @@ const PostCard: React.FC<Iprops> = ({ post }) => {
   );
 };
 
-export default PostCard;
+export default React.memo(PostCard);

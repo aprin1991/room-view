@@ -14,6 +14,7 @@ function UserHeader() {
         <p className="mb-1 font-normal text-base">
           Personal blog by{" "}
           <a
+            target="_blank"
             className="  text-red-500 dark:text-rose-300 underline hover:no-underline  underline-offset-2"
             href="https://mobile.twitter.com/dan_abramov"
           >

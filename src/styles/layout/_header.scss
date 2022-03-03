@@ -24,3 +24,9 @@
         transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     }
 }
+
+.inner-header {
+    text-decoration: none;
+    color: rgb(255, 167, 196) !important;
+    font-size: 23px;
+}

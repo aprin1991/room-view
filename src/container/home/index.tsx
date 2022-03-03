@@ -1,14 +1,21 @@
+import Custom404 from "@components/404/404";
 import React from "react";
 import Posts from "./components/Posts";
 import UserHeader from "./components/UserHeader";
-
-function HomePage() {
-  return (
+import { PostProps } from "./types";
+type IProps = {
+  posts: PostProps[];
+  requestedError: boolean;
+};
+const HomePage: React.FC<IProps> = ({ posts, requestedError }) => {
+  return requestedError ? (
+    <Custom404 />
+  ) : (
     <div className="">
       <UserHeader />
-      <Posts />
+      <Posts posts={posts} />
     </div>
   );
-}
+};
 
 export default HomePage;

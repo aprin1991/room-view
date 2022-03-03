@@ -1,0 +1,14 @@
+.dark {
+    .post-title {
+        &.post-detail-title {
+            color: #fff !important;
+        }
+    }
+}
+
+.post-title {
+    &.post-detail-title {
+        color: #000;
+        font-size: 32px;
+    }
+}

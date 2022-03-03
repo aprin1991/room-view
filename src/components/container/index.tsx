@@ -1,6 +1,7 @@
 import { RootState } from "@redux/reducers";
-import React from "react";
-import { useSelector } from "react-redux";
+import ToggleDarkMode from "@redux/toggle_dark_light/toggle.action";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import { Header } from "./../";
 
@@ -8,8 +9,20 @@ type Iprops = {
   children: React.ReactNode;
 };
 export const Container: React.FC<Iprops> = ({ children }) => {
-  const { darkMode } = useSelector((state: RootState) => state);
-  console.log("darkMode", darkMode);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+      dispatch(ToggleDarkMode(true));
+    } else {
+      document.documentElement.classList.remove("dark");
+      dispatch(ToggleDarkMode(false));
+    }
+  }, []);
   return (
     <div className="w-full xl:w-256 mx-auto pt-9 px-4 max-w-2xl container">
       <Header />

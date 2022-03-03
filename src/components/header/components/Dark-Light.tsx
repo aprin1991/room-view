@@ -1,22 +1,27 @@
+import { RootState } from "@redux/reducers";
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ToggleDarkMode from "src/redux/toggle_dark_light/toggle.action";
 function DarkLight() {
   const dispatch = useDispatch();
   const [dark, setDark] = useState(false);
+  const { darkMode } = useSelector((state: RootState) => state);
   useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
+    if (darkMode !== -1) {
+      if (darkMode) {
+        document.documentElement.classList.add("dark");
+        localStorage.theme = "dark";
+      } else {
+        localStorage.theme = "light";
+        document.documentElement.classList.remove("dark");
+      }
     }
+    setDark(darkMode);
+  }, [darkMode]);
 
-    dispatch(ToggleDarkMode(dark));
-  }, [dark]);
   const handleDarkMode = () => {
     setDark((prev) => !prev);
+    dispatch(ToggleDarkMode(!darkMode));
   };
   return (
     <div
