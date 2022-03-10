@@ -1,12 +1,12 @@
 import { RootState } from "@redux/reducers";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ToggleDarkMode from "src/redux/toggle_dark_light/toggle.action";
 function DarkLight() {
   const dispatch = useDispatch();
   const [dark, setDark] = useState(false);
   const { darkMode } = useSelector((state: RootState) => state);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (darkMode !== -1) {
       if (darkMode) {
         document.documentElement.classList.add("dark");
