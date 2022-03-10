@@ -1,6 +1,6 @@
 import { RootState } from "@redux/reducers";
 import ToggleDarkMode from "@redux/toggle_dark_light/toggle.action";
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import { Header } from "./../";
@@ -10,7 +10,7 @@ type Iprops = {
 };
 export const Container: React.FC<Iprops> = ({ children }) => {
   const dispatch = useDispatch();
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&

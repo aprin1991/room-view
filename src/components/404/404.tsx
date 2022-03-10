@@ -7,7 +7,7 @@ const Custom404 = () => {
     <div className="p-5 lg:p-20 flex justify-center w-full">
       <figure className=" w-full px-2 lg:px-10 py-16 flex-ap flex-col items-center w-full">
         <figcaption className="flex flex-col items-center mb-10">
-          <p className="text-white text-base font-semibold">
+          <p className="text-black dark:text-white text-base font-semibold">
             Sorry We Can't find
           </p>
 
